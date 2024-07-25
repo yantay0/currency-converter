@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 public class AccountEntity extends BaseEntity{
 
     @Column(nullable = false, unique = true, length = 10)
-    private Long accountNumber;
+    private String accountNumber;
     private Integer currency;
     @Column(nullable = false, scale = 2)
     private BigDecimal balance;

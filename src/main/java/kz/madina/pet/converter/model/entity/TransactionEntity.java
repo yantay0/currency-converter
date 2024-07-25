@@ -19,7 +19,7 @@ public class TransactionEntity extends BaseEntity{
     private Integer currency;
     @Column(nullable = false, scale = 2)
     private BigDecimal sum;
-    private LocalDateTime dateTime;
+private LocalDateTime dateTime;
     private Integer expenseCategory;
     public Currency getCurrency() {
         return Currency.getType(this.currency);
